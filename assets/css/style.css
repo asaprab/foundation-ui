@@ -1,0 +1,233 @@
+body {
+  font-family: "Work Sans";
+  font-size: 1em;
+  font-style: normal;
+  /* line-height: 1.25em; */
+  font-weight: 400;
+}
+
+.f-subtitle {
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+  line-height: 2.2em;
+}
+
+.f-sub {
+  font-size: 1.34em;
+  line-height: 1.89em;
+  font-weight: normal;
+}
+
+.f-sm {
+  font-size: 0.78em;
+  line-height: 1.1em;
+}
+
+.f-sm-link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.f-text-bold {
+  font-weight: 700;
+  line-height: 1.7em;
+}
+
+.f-text-norm {
+  line-height: 1.45em;
+}
+
+.logo > img {
+  max-height: inherit;
+}
+
+.options-text-b {
+  font-size: 1.1em;
+  line-height: 1.34em;
+  text-align: center;
+  text-decoration: underline;
+  color: #3041c4;
+  font-weight: bold;
+}
+
+.faq-text {
+  line-height: 1.55em;
+  font-size: 0.9em;
+}
+
+.options-text-b2 {
+  font-size: 1.22em;
+  line-height: 1.45em;
+  font-weight: 700;
+  color: #2b292d;
+}
+
+.options-text-b3 {
+  font-size: 1em;
+  line-height: 1.45em;
+  font-weight: 700;
+  color: #2b292d;
+}
+
+.hero-title {
+  background: linear-gradient(360deg, #f4f5f7 0%, #000000 600%);
+  mix-blend-mode: normal;
+  color: #2b292d;
+}
+
+.hero-title > div > div > h1 {
+  font-size: 3.11em;
+  /* line-height: 3.11em; */
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.pricing-section,
+.cta {
+  background-color: #f4f5f7;
+}
+
+/* button */
+.nav-f-button,
+.cta-button {
+  color: white;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 1e-5) 100%
+    ),
+    #3041c4;
+  background-blend-mode: overlay, normal;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border: 1px solid #3041c4;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.nav-f-button:hover,
+.cta-button:hover {
+  background: white;
+  border: 1px solid #3041c4;
+  border-radius: 2px;
+  color: #3041c4;
+}
+
+.f-button {
+  background: transparent;
+  border: 1px solid #3041c4;
+  border-radius: 1px;
+  color: #3041c4;
+  font-weight: 700;
+  transition: 0.3s;
+  font-size: 1em;
+}
+
+.f-button:hover {
+  color: white;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 1e-5) 100%
+    ),
+    #3041c4;
+  background-blend-mode: overlay, normal;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border: 1px solid #3041c4;
+  border-radius: 2px;
+}
+
+input[type="text"] {
+  background: #ffffff;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  box-sizing: border-box;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+input[type="text"]::placeholder {
+  color: #2b292d;
+  font-family: "Work Sans";
+}
+
+.check {
+  background: url(../check.svg) no-repeat center;
+}
+
+.column-cards {
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.card:hover {
+  background-color: #fff;
+}
+
+.vr {
+  border-right: 1px solid #ddd;
+}
+
+@media only screen and (max-width: 769px) {
+  .vr {
+    border-right: none;
+  }
+  .card-content {
+    padding-bottom: 30px !important;
+  }
+  .card-footer {
+    padding-top: 20px !important;
+  }
+  .options {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .p-footer,
+  .footer > div > div > div,
+  .cta {
+    text-align: center !important;
+  }
+}
+
+.faq-title {
+  color: #2b292d;
+  letter-spacing: -0.5px;
+}
+
+.footer {
+  border-top: 1px solid rgba(43, 41, 45, 0.1);
+  background-color: #ffffff;
+}
+
+.disc-card {
+  vertical-align: top;
+  border-bottom: 1px solid lightgray;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  /* visibility: hidden;
+  transition: 0.3s ease; */
+}
+
+.disc-card > span {
+  color: #e22729;
+  font-weight: bold;
+}
+
+.navbar.is-white .navbar-brand > a.navbar-item:hover {
+  background-color: transparent !important;
+}
+/* .show-card {
+  display: block;
+  visibility: visible;
+} */

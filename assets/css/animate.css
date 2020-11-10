@@ -1,0 +1,88 @@
+/* shake buttons */
+.button:hover {
+  animation: shake 1s; /* Shake it yaaay! */
+  animation-iteration-count: 3;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/* flip-logo */
+.logo,
+.flogo {
+  transition: 0.5s;
+}
+.logo:focus,
+.flogo:focus {
+  transform: rotateY(180deg);
+}
+
+/* card-animate */
+.card:hover,
+.card:focus {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+  transition-timing-function: ease;
+}
+
+/* image animate */
+img:hover,
+img:focus {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-timing-function: ease;
+}
+
+/* disc-card animate/slide */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100%);
+    border-bottom: none;
+  }
+  100% {
+    transform: translateX(0%);
+    border-bottom: none;
+  }
+  110% {
+    border-bottom: none;
+  }
+}
+
+.disc-card {
+  animation: 2s ease-out 0s 1 slideInFromLeft;
+}
